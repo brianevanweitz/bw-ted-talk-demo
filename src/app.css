@@ -27,3 +27,40 @@ body {
 .right-panel { 
     margin-left: 260px;
  }
+ .mobile-menu {
+    display: none;
+ }
+
+ @media only screen and (max-width: 600px) {
+    .ais-InstantSearch {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-panel {
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .right-panel{
+        width: 100%;
+        margin-left: 0;
+    }
+    .ais-Hits-item {
+        flex-basis: 100%;
+    }
+    .mobile-menu {
+        display: block;
+    }
+    #menu {
+        display: none;
+    }
+    #menu-label {
+        border: 2px solid black;
+        border-radius: 5%;
+        text-align: center;
+    }
+    input#menu:checked+label+div.left-panel {
+        max-height: 100%;
+        overflow: auto;
+    }
+ }
