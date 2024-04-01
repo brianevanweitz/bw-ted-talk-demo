@@ -1,4 +1,4 @@
-# bw-ted-talk-demo
+# Algolia Ted Talk Search Demo - Brian Weitz
 
 ### The Project:
 For this project, I began by uploading and indexing a dataset of Ted Talks (provided by Algolia) to my Algolia Dashboard. For relevancy setttings, I configured both searchable attributes and attributes for faceting. I then created a front-end UI using a boostrapped instantsearch.js project.
